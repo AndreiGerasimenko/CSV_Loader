@@ -53,7 +53,7 @@ const childrenValidator = (value) => {
 
 const licenseNumberValidator = (value) => {
     if(value.length !== 6) return false;
-    if(/[()~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g.test(value)) return false;
+    if(/[()~`!#$%^&*+=\-[\]\\';,/{}|\\":<>?]/g.test(value)) return false;
     
     return true;
 }
